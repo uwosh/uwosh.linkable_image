@@ -1,0 +1,11 @@
+<div id="mainImage" tal:attributes="style view/style">
+	<tal:comment tal:replace="nothing">
+		So it will at least show an image even if the person does not have javascript enabled
+	</tal:comment>
+	<noscript>
+		<div tal:condition="view/hasImages">
+            <img alt="Main Image" tal:attributes="src python: view.get_image_data()[0]['image_url']" />
+	    </div>
+	</noscript>
+	<tal:js tal:replace="structure view/javascript"  tal:condition="view/hasImages"/>
+</div>

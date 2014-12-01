@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<layers>
+  <layer
+      name="uwosh.linkable_image"
+      interface="uwosh.linkable_image.browser.interfaces.ILinkableImagesLayer"
+  />
+</layers>

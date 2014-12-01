@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<rolemap>
+  <roles>
+    <role name="Manager"/>
+  </roles>
+  <permissions>
+    <permission name="uwosh.linkable_image: Add Linkable Image" acquire="False">
+      <role name="Manager"/>
+    </permission>
+  </permissions>
+</rolemap>

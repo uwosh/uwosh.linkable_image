@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="uwosh.theme">
+
+	<!-- Override main images viewlet -->
+	<browser:viewlet
+	name="uwosh.themebase.mainimage"
+	manager="plone.app.layout.viewlets.interfaces.IPortalTop"
+	layer="uwosh.linkable_image.browser.interfaces.ILinkableImagesLayer"
+	class=".browser.linkable_main_image.LinkableMainImage"
+	permission="zope2.View" />
+
+</configure>
